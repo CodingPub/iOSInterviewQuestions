@@ -639,7 +639,7 @@ autoreleasepool 以一个队列数组的形式实现,主要通过下列三个函
  ![enter image description here](http://i60.tinypic.com/15mfj11.jpg)
 
 ### 37. 使用block时什么情况会发生引用循环，如何解决？
-一个对象中强引用了block，在block中又强引用了该对象，就会发射循环引用。
+一个对象中强引用了block，在block中又强引用了该对象，就会发生循环引用。
 
 解决方法是将该对象使用__weak或者__block修饰符修饰之后再在block中使用。
 
